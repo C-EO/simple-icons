@@ -4324,6 +4324,11 @@
 		"source": "https://dev.to"
 	},
 	{
+		"title": "Devbox",
+		"hex": "280459",
+		"source": "https://github.com/jetify-com/devbox/blob/c3cab01d7375726f0121a25fc0f5c838484246f7/docs/app/static/img/devbox_logo_light.svg"
+	},
+	{
 		"title": "DevExpress",
 		"hex": "FF7200",
 		"source": "https://www.devexpress.com/aboutus/"
@@ -5195,8 +5200,9 @@
 	},
 	{
 		"title": "Expo",
-		"hex": "000020",
-		"source": "https://expo.io/brand/"
+		"hex": "1C2024",
+		"source": "https://expo.dev/brand/",
+		"guidelines": "https://expo.dev/brand/"
 	},
 	{
 		"title": "Express",
@@ -5485,6 +5491,11 @@
 		"title": "File.io",
 		"hex": "3D3C9D",
 		"source": "https://www.file.io"
+	},
+	{
+		"title": "Filen",
+		"hex": "000000",
+		"source": "https://github.com/FilenCloudDienste/filen-drive-legacy/issues/166#issue-2139393162"
 	},
 	{
 		"title": "Files",
@@ -6236,6 +6247,11 @@
 		"title": "Gitter",
 		"hex": "ED1965",
 		"source": "https://gitter.im"
+	},
+	{
+		"title": "GL.iNet",
+		"hex": "636363",
+		"source": "https://www.gl-inet.com/press/"
 	},
 	{
 		"title": "Glassdoor",
@@ -8834,6 +8850,11 @@
 		"source": "https://www.langchain.com"
 	},
 	{
+		"title": "Langflow",
+		"hex": "000000",
+		"source": "https://github.com/langflow-ai/langflow/blob/a5f5f3e3e30ee1740b696e3ad1823287ba27870c/docs/static/img/langflow-icon-black-transparent.svg"
+	},
+	{
 		"title": "LangGraph",
 		"hex": "1C3C3C",
 		"source": "https://www.langchain.com/langgraph"
@@ -9410,6 +9431,11 @@
 		"title": "LOT Polish Airlines",
 		"hex": "11397E",
 		"source": "https://www.lot.com/us/en/kaleidoscope-inflight-magazine"
+	},
+	{
+		"title": "LottieFiles",
+		"hex": "00DDB3",
+		"source": "https://lottiefiles.github.io/lottie-docs/"
 	},
 	{
 		"title": "LTspice",
@@ -13503,7 +13529,7 @@
 	{
 		"title": "Renovate",
 		"hex": "308BE3",
-		"source": "https://avatars1.githubusercontent.com/u/38656520",
+		"source": "https://github.com/user-attachments/assets/8533178e-b2c4-4e15-bb3d-8df9e19e3760",
 		"guidelines": "https://docs.renovatebot.com/logo-brand-guidelines"
 	},
 	{
@@ -16355,6 +16381,11 @@
 		"source": "https://styleguide.torproject.org/brand-assets"
 	},
 	{
+		"title": "Torizon",
+		"hex": "FAAF00",
+		"source": "https://toradex.com/torizon"
+	},
+	{
 		"title": "Toshiba",
 		"hex": "FF0000",
 		"source": "https://commons.wikimedia.org/wiki/File:Toshiba_logo.svg"
@@ -18157,6 +18188,12 @@
 		"hex": "A61E69",
 		"source": "https://yoast.com/brand",
 		"guidelines": "https://yoast.com/brand"
+	},
+	{
+		"title": "YOLO",
+		"hex": "111F68",
+		"source": "https://www.ultralytics.com/brand",
+		"guidelines": "https://www.ultralytics.com/brand"
 	},
 	{
 		"title": "YouHodler",
