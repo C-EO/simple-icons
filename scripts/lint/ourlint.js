@@ -136,6 +136,15 @@ ${invalids.map((icon) => `${format(icon)} ${findPositon(expectedOrder, icon)}`).
 			$url.hostname === 'raw.githubusercontent.com';
 
 		/**
+		 * Check if URl is user attachment URL.
+		 * @param {URL} $url URL instance.
+		 * @returns {boolean} Whether the URL is user attachment URL.
+		 */
+		const isGitHubUserAttachmentUrl = ($url) =>
+			$url.hostname === 'github.com' &&
+			$url.pathname.startsWith('/user-attachments/assets');
+
+		/**
 		 * Check if an URL is a GitHub URL.
 		 * @param {URL} $url URL instance.
 		 * @returns {boolean} Whether the URL is a GitHub URL.
@@ -146,7 +155,7 @@ ${invalids.map((icon) => `${format(icon)} ${findPositon(expectedOrder, icon)}`).
 		 * Regex to match a permalink GitHub URL for a file.
 		 */
 		const permalinkGitHubRegex =
-			/^https:\/\/github\.com\/[^/]+\/[^/]+\/(blob\/[a-f\d]{40}\/\S+)|(tree\/[a-f\d]{40}(\/\S+)?)|(((issues)|(pull)|(discussions))\/\d+#((issuecomment)|(discussioncomment))-\d+)|(wiki\/\S+\/[a-f\d]{40})$/;
+			/^https:\/\/github\.com\/[^/]+\/[^/]+\/(blob\/[a-f\d]{40}\/\S+)|(tree\/[a-f\d]{40}(\/\S+)?)|(((issues)|(pull)|(discussions))\/\d+#((issue)|(issuecomment)|(discussioncomment))-\d+)|(wiki\/\S+\/[a-f\d]{40})$/;
 
 		/**
 		 * URLs excluded from the GitHub URL check as are used by GitHub brands.
@@ -194,6 +203,8 @@ ${invalids.map((icon) => `${format(icon)} ${findPositon(expectedOrder, icon)}`).
 			if (hasRedundantTrailingSlash($url, url)) {
 				invalidUrls.push(fakeDiff(url, $url.origin));
 			}
+
+			if (isGitHubUserAttachmentUrl($url)) continue;
 
 			if (isStaticWikimediaAssetUrl($url)) {
 				const expectedUrl = `https://commons.wikimedia.org/wiki/File:${path.basename($url.pathname)}`;
